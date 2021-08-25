@@ -16,7 +16,7 @@
 </head>
 
 <body>
-  <img class="lazy" data-src="https://cdn.pixabay.com/photo/2021/08/09/00/00/bellflower-6532224_960_720.jpg" />
+  <img class="lazy" data-src="./images/business-1.jpg" />
 
   <img class="lazy" data-src="https://cdn.pixabay.com/photo/2019/06/06/13/36/italy-4256017_960_720.jpg">
 
@@ -35,6 +35,23 @@
         });
     });
   </script>
+
+  <!-- <script>
+  var dir = "/images";
+  var fileextension = ".jpg";
+  $.ajax({
+      //This will retrieve the contents of the folder if the folder is configured as 'browsable'
+      url: dir,
+      success: function (data) {
+          //List all .png file names in the page
+          $(data).find("a:contains(" + fileextension + ")").each(function () {
+              var filename = this.href.replace(window.location.host, "").replace("http://", "");
+              $("body").append("<img src='" + dir + filename + "'>");
+          });
+
+      }
+  });
+</script> -->
 </body>
 
 </html>
