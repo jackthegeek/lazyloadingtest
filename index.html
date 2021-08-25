@@ -2,6 +2,14 @@
 
 <head>
   <title>Lazy Loading Test</title>
+
+  <!-- Jquery  -->
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.js" integrity="sha512-n/4gHW3atM3QqRcbCn6ewmpxcLAHGaDjpEBu4xZd47N0W2oQ+6q7oc3PXstrJYXcbNU1OHdQ1T7pAP+gi5Yu8g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  
   <!-- Lazy Loading Jquery Plugin -->
   <!-- jsDeliver -->
   <script type="text/javascript" src="//cdn.jsdelivr.net/jquery.lazy/1.7.9/jquery.lazy.min.js"></script>
@@ -23,7 +31,7 @@
   <img class="lazy" data-src="https://cdn.pixabay.com/photo/2016/12/24/22/09/destruction-1929422_960_720.jpg">
 
   <script>
-  	  $(function() {
+      $(function() {
         $('.lazy').lazy({
           effect: "fadeIn",
           effectTime: 2000,
